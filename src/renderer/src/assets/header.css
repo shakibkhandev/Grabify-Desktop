@@ -1,0 +1,7 @@
+.header-webkit{
+    -webkit-app-region : drag;
+}
+
+.header-webkit .btn{
+    -webkit-app-region : no-drag;
+}
