@@ -3,6 +3,7 @@ import "../assets/header.css"
 import "../assets/header.css"
 
 export default function Header() {
+
   return (
     <div className="sticky top-0 z-10 backdrop-blur-md bg-white/75 dark:bg-gray-900/75 border-b border-gray-200/50 dark:border-gray-700/50 h-16 header-webkit">
       <div className="flex items-center justify-end h-full px-4">
@@ -32,19 +33,19 @@ export default function Header() {
 
           {/* Window Control Icons */}
           <div className="flex items-center space-x-1.5 ml-4 border-l border-gray-200 dark:border-gray-700 pl-4">
-            <button className="p-2 transition-all duration-200 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-xl text-gray-600 dark:text-gray-300 btn">
+            <button className="p-2 transition-all duration-200 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-xl text-gray-600 dark:text-gray-300 btn" onClick={() => window.context.send("minimize")}>
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M6 12h12" />
               </svg>
             </button>
 
-            <button className="p-2 transition-all duration-200 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-xl text-gray-600 dark:text-gray-300 btn">
+            <button className="p-2 transition-all duration-200 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-xl text-gray-600 dark:text-gray-300 btn" onClick={() => window.context.send("maximize")}>
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 4h16v16H4z" />
               </svg>
             </button>
 
-            <button className="p-2 transition-all duration-200 hover:bg-red-100 dark:hover:bg-red-900/50 rounded-xl text-gray-600 dark:text-gray-300 btn">
+            <button className="p-2 transition-all duration-200 hover:bg-red-100 dark:hover:bg-red-900/50 rounded-xl text-gray-600 dark:text-gray-300 btn" onClick={() => window.context.send("close")}>
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M6 6L18 18M6 18L18 6" />
               </svg>
