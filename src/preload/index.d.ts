@@ -2,7 +2,10 @@ import { ElectronAPI } from '@electron-toolkit/preload'
 
 declare global {
   interface Window {
-    electron: ElectronAPI
-    api: unknown
+    context: {
+      locale: string;
+      send:(way:string, data?:object)=> void;
+      sendPromise:(way:string, data?:object)=> Promise<any>;
+    }
   }
 }

@@ -1,34 +1,26 @@
-# grabify-desktop
+# 🎥 Grabify – Open-Source Video Downloader  
 
-An Electron application with React and TypeScript
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![Contributions Welcome](https://img.shields.io/badge/Contributions-Welcome-brightgreen.svg)](CONTRIBUTING.md)
 
-## Recommended IDE Setup
+**Grabify** is an open-source desktop application that allows users to download videos from various platforms like **YouTube, Facebook, TikTok, and more**. It provides a simple and efficient way to save your favorite videos for offline use.  
 
-- [VSCode](https://code.visualstudio.com/) + [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) + [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+## 🚀 Features  
+✅ Download videos from **YouTube, Facebook, TikTok**, and other platforms  
+✅ Support for multiple formats and resolutions  
+✅ Fast and secure video processing  
+✅ Fully open-source and community-driven  
+✅ User-friendly interface  
 
-## Project Setup
+## 🛠️ Tech Stack  
+- **Frontend:** Electron Vite
+- **Backend:** Node.js
+- **Database:** MongoDB
 
-### Install
+## 📦 Installation  
 
-```bash
-$ yarn
-```
-
-### Development
-
-```bash
-$ yarn dev
-```
-
-### Build
-
-```bash
-# For windows
-$ yarn build:win
-
-# For macOS
-$ yarn build:mac
-
-# For Linux
-$ yarn build:linux
-```
+1. **Clone the Repository**  
+   ```sh
+   git clone https://github.com/shakibkhandev/Grabify.git
+   cd grabify
+   ```
